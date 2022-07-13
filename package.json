@@ -5,6 +5,11 @@
   "main": "index.js",
   "codeVersions": [
     {
+      "code": "1.69.0",
+      "electron": "18.3.5",
+      "modules": 103
+    },
+    {
       "code": "1.59.0",
       "electron": "13.1.7",
       "modules": 89
@@ -24,7 +29,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron-rebuild": "^2.3.5",
+    "electron-rebuild": "^3.2.8",
     "lodash": "^4.17.21",
     "node-abi": "^2.30.0",
     "semver": "^7.3.5",
