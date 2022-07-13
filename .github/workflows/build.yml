@@ -5,6 +5,7 @@ on:
 jobs:
   build-bindings:
     runs-on: ${{ matrix.os }}
+    environment: secrets
     strategy:
       matrix:
         node-version: [14.x]
@@ -33,4 +34,4 @@ jobs:
     - name: Install Modules
       run: npm install
     - name: Rebuild serialport and Commit
-      run: node --unhandled-rejections=strict build.js ${{ matrix.os }} ${{ secrets.TOKEN }} ${{ secrets.EMAIL }}
+      run: node --unhandled-rejections=strict build.js ${{ matrix.os }} ${{ secrets.TOKEN }}
